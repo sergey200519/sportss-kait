@@ -1,0 +1,20 @@
+.section {
+    margin-bottom: 60px;
+}
+.section_title {
+    @include font($fz: 38px);
+    margin-bottom: 15px;
+}
+.button {
+    display: block;
+    padding: 22px 50px;
+    border: 1px solid var(--orange);
+    background: transparent;
+    border-radius: 50px;
+    @include font($fz: 16px, $fw: 700);
+    cursor: pointer;
+    &:hover {
+        color: var(--orange);
+        box-shadow: 0 4px 4px rgba($color: $black, $alpha: .25);
+    }
+}

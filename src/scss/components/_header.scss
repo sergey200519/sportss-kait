@@ -4,6 +4,7 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+        gap: 20px;
         padding-top: 15px;
         padding-bottom: 15px;
     }
@@ -19,6 +20,9 @@
             ul {
                 display: flex;
                 gap: 58px;
+                @media (max-width: 1440px) {
+                    gap: 20px;
+                }
                 a {
                     @include font($fz: 18px);
                     &:hover {
@@ -32,6 +36,9 @@
         display: flex;
         align-items: center;
         gap: 40px;
+        @media (max-width: 1440px) {
+            gap: 20px;
+        }
         a {
             padding: 5px 40px;
             color: var(--white);

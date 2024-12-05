@@ -1,0 +1,13 @@
+.catalog {
+    @extend .section;
+    h2 {
+        @extend .section_title;
+    }
+    &_wrap {
+        display: flex;
+        gap: 150px;
+        @media (max-width: 1280px) {
+            gap: 50px;
+        }
+    }
+}
