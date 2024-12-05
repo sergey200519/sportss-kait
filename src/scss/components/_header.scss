@@ -1,0 +1,86 @@
+.topheader {
+    background: var(--page-background);
+    background: linear-gradient(var(--white), var(--page-background));
+    .container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        @media (max-width: 1280px) {
+            padding: 10px var(--container-padding);
+        }
+    }
+    &_mobile {
+        display: none;
+        flex-direction: column;
+        gap: 5px;
+        cursor: pointer;
+        @media (max-width: 1024px) {
+            display: flex;
+        }
+        span {
+            width: 40px;
+            height: 5px;
+            background: var(--darkblue);
+        }
+        span:nth-child(1) {
+            background: linear-gradient(var(--darkblue), var(--darkpink));
+        }
+        span:nth-child(2) {
+            background: var(--darkpink);
+        }
+        span:nth-child(3) {
+            background: linear-gradient(var(--darkpink), var(--darkblue));
+        }
+    }
+    &_logo {
+        @extend .logo_topheader;
+        margin: 10px 0;
+        @media (max-width: 1280px) {
+            max-width: 120px;
+            img {
+                width: 100%;
+            }
+        }
+        @media (max-width: 1024px) {
+            display: none;
+        }
+    }
+    .headernav {
+        display: block;
+        align-self: center;
+        @media (max-width: 1024px) {
+            display: none;
+        }
+        &_ul {
+            display: flex;
+            height: 100%;
+            li {
+                a {
+                    display: flex;
+                    margin: auto;
+                    padding: 15px 30px;
+                    color: var(--darkblue);
+                    @include font(var(--normal-fz));
+                    span {
+                        margin: auto;
+                    }
+                    @media (max-width: 1280px) {
+                        padding: 14px 20px;
+                    }
+                }
+            }
+            li.active,
+            li:hover {
+                background: var(--darkblue);
+                border-radius: var(--border-radius);
+                a {
+                    color: var(--white);
+                }
+            }
+        }
+    }
+    &_appointment {
+        @extend .appointment_to_doctor;
+    }
+}

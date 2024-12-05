@@ -1,0 +1,81 @@
+* {
+  font-family: "Roboto", sans-serif;
+  transition: 0.8s;
+  @include font(var(--normal-fz));
+}
+// *::selection {
+//   color: var(--darkpink);
+//   color: rgba($color: $darkpink, $alpha: .8);
+//   background: rgba($color: $darkblue, $alpha: .5);
+// }
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100dvh;
+  background: var(--page-background);
+}
+// .main {
+//   flex: 1 1 auto;
+  
+// }
+.container {
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 0  var(--container-padding);
+}
+.wrap {
+  display: flex;
+  gap: 60px;
+  padding: 30px 0;
+  @media (max-width: 1024px) {
+    gap: 20px;
+  }
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
+}
+main.main {
+  flex: 1 1 auto;
+}
+.content {
+  flex: 1 1 auto;
+  min-width: 250px;
+}
+.none {
+  display: none !important;
+}
+.btn {
+  display: block;
+  width: fit-content;
+  @include btn();
+}
+.btn:hover {
+  background: rgba($color: $darkblue, $alpha: 0.8);
+}
+h1 {
+  @include font(30px, $fw: 800);
+  @media (max-width: 568px) {
+    font-size: 34px;
+  }
+}
+.h2,
+.h2 h2 {
+  color: var(--darkblue);
+  margin-bottom: 30px;
+  @include font(38px, $fw: 800, $ff: #{"Ubuntu", sans-serif}, $fs: italic);
+  @media (max-width: 568px) {
+    font-size: 28px;
+  }
+}
+h3 {
+  @include font(var(--h3-fz), 600);
+  color: var(--darkpink);
+  margin: 15px 0 20px 0;
+}
+section {
+  margin-bottom: var(--section_gap);
+}
+a {
+  cursor: pointer;
+}

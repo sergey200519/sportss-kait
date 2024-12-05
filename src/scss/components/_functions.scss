@@ -1,0 +1,10 @@
+@function dynamic_value($vmin, $vmax, $nmin, $nmax, $unit) {
+    @return calc((100vw - #{$vmin}#{$unit}) / (#{$vmax} - #{$vmin}) * (#{$nmax} - #{$nmin}) + #{$nmin}#{$unit});
+}
+@function dynamic_value_1920-320($nmin, $nmax, $unit) {
+    @return dynamic_value(320, 1920, $nmin, $nmax, $unit);
+}
+
+@function hexToRGB($hexColor) {
+    @return rgb(red($hexColor), green($hexColor), blue($hexColor));
+}

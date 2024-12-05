@@ -1,0 +1,90 @@
+.sitefooter {
+    background: var(--lightgray);
+    padding: var(--container-padding) 0;
+    .container {
+        display: flex;
+        justify-content: space-between;
+        gap: 15px;
+        flex-wrap: wrap;
+        @media (max-width: 768px) {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    }
+    &_left {
+        &_copyright {
+            @include font(var(--small-fz), $fw: 400);
+            margin-bottom: 15px;
+        }
+        &_address {
+            margin-bottom: 15px;
+            a {
+                color: var(--darkblue);
+                @include font(var(--normal-fz), $fw: 400);
+            }
+            a:hover,
+            a:focus {
+                text-decoration: underline;
+            }
+        }
+        > span {
+            display: block;
+            @include font(var(--small-fz), $fw: 400);
+            margin-bottom: 10px;
+        }
+    }
+    &_cards {
+        display: flex;
+        gap: 5px;
+        img {
+            width: 58px;
+            height: 34px;
+            object-fit: cover;
+        }
+    }
+    &_social {
+        display: flex;
+        gap: 5px;
+        a {
+            img {
+                width: 40px;
+                height: 40px;
+                object-fit: cover;
+            }
+        }
+    }
+    &_right {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        align-items: flex-end;
+        @media (max-width: 768px) {
+            align-items: flex-start;
+        }
+        &_phones {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+            @media (max-width: 768px) {
+                flex-direction: row-reverse;
+            }
+            img {
+                width: 30px;
+            }
+            > div {
+                display: flex;
+                flex-direction: column;
+                gap: 5px;
+                @extend .phones;
+                a {
+                    color: var(--darkblue);
+                }
+            }
+        }
+        &_email {
+            a {
+                @extend .link;
+            }
+        }
+    }
+}

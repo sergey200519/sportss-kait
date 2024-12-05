@@ -1,0 +1,74 @@
+:root {
+    // section <--- main --->
+    // page
+    --page-background: #{rgba($color: $darkblue, $alpha: 0.1)};
+    // font
+    --main_font-family: "Roboto", sans-serif;
+    --small-fz: 16px;
+    --normal-fz: 18px;
+    --big-fz: 20px;
+    --h3-fz: 22px;
+    // container
+    --container-padding: 25px;
+    // section
+    --section_gap: 30px;
+    // li
+    --li_active_before_top: 0;
+    // border
+    --border-radius: 8px;
+    // gaps
+    --base_mb: calc(var(--section_gap) / 2);
+
+    // section <--- index --->
+    --team_swiper-padding: 25px;
+    --team_slide-width: 150px;
+    --team_swiper-gap: 0;
+
+    // section <--- colors --->
+    // white
+    --white: #fff;
+    // black
+    --black: #{$black};
+    // gray
+    --gray: #{$gray};
+    --lightgray: #e5e5e5;
+    --whitegray: #f7f7f7;
+    --darkgray: #565656;
+    // green
+    --lightgreen: #8ec63f;
+    --darkgreen: #267831;
+    --blackgreen: #14601e;
+    // red
+    --red: #ff0000;
+    --darkred: #b92426;
+    // pink
+    --darkpink: #{$darkpink};
+    // orange
+    --orange: #ed6a01;
+    --darkorange: #ac560f;
+    // blue
+    --darkblue: #{$darkblue};
+    // tiffany
+    --whitetiffany: #abdcdc;
+    --tiffany: #0cb8b6;
+}
+
+@media (max-width: 568px) {
+    :root {
+        // section <--- main --->
+        // container
+        --container-padding: 15px;
+        // font
+        --small-fz: 14px;
+        --normal-fz: 16px;
+        --big-fz: 18px;
+    }
+}
+
+@media (max-width: 375px) {
+    :root {
+        // section <--- main --->
+        // container
+        --container-padding: 5px;
+    }
+}

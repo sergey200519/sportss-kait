@@ -1,0 +1,23 @@
+@mixin btn($padding: 10px 30px,
+$fz: 16px,
+$fw: 400,
+$color: var(--white),
+$background: var(--darkblue),
+$border_radius: var(--border-radius)) {
+    border: none;
+    background: $background;
+    color: $color;
+    padding: $padding;
+    font-size: $fz;
+    font-weight: $fw;
+    border-radius: $border_radius;
+}
+
+@mixin font($fz, $fw: 400, $ff: var(--main_font-family), $fs: normal, $lh: normal, $pos: left) {
+    font-family: $ff;
+    font-size: $fz;
+    font-weight: $fw;
+    font-style: $fs;
+    line-height: $lh;
+    text-align: $pos;
+}
