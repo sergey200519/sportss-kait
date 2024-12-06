@@ -40,7 +40,8 @@
         @media (max-width: 1440px) {
             gap: 20px;
         }
-        a {
+        a:nth-child(1),
+        a:nth-child(2) {
             padding: 5px 40px;
             color: var(--white);
             @include font($fz: 18px);
