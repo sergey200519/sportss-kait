@@ -14,9 +14,16 @@
         h3 {
             @include font($fz: 22px, $fw: 700);
         }
-        button {
-            @extend .button;
-            margin: 0 auto;
+        &_bottom {
+            p {
+                display: block;
+                margin-bottom: 10px;
+                @include font($fz: 22px, $fw: 400);
+            }
+            button {
+                @extend .button;
+                margin: 0 auto;
+            }
         }
     }
 }

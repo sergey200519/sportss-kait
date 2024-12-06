@@ -1,0 +1,76 @@
+<section class="catalog">
+    <div class="container">
+        <div class="catalog_header">
+            <h2>Наши товары</h2>
+            <select>
+                <option value="Всё">Всё</option>
+                <option value="Фитнес и тренажёры">Фитнес и тренажёры</option>
+                <option value="Спорт инвентарь">Спорт инвентарь</option>
+                <option value="Одежда и аксессуары">Одежда и аксессуары</option>
+                <option value="Обувь">Обувь</option>
+            </select>
+        </div>
+        <div class="catalog_wrap">
+            @@loop("@@pagesPath/components/pages/_card.html", [
+                {
+                    "link": "#",
+                    "image": "card4.png",
+                    "name": "Коньки детские раздвижные Nordway Slide",
+                    "price": "2 589 ₽",
+                    "btn": "В корзину"
+                },
+                {
+                    "link": "#",
+                    "image": "card1.png",
+                    "name": "Ботинки мужские Outventure Cheget Mid",
+                    "price": "3 589 ₽",
+                    "btn": "В корзину"
+                },
+                {
+                    "link": "#",
+                    "image": "card2.png",
+                    "name": "Ботинки утепленные мужские Geox U Ghiacciaio D",
+                    "price": "2 589 ₽",
+                    "btn": "В корзину"
+                },
+                {
+                    "link": "#",
+                    "image": "card3.png",
+                    "name": "Рюкзак Skechers",
+                    "price": "5 589 ₽",
+                    "btn": "В корзину"
+                },
+
+
+                {
+                    "link": "#",
+                    "image": "card5.png",
+                    "name": "Куртка утепленная мужская VolklКуртка утепленная мужская Volkl",
+                    "price": "11 899 ₽",
+                    "btn": "В корзину"
+                },
+                {
+                    "link": "#",
+                    "image": "card6.png",
+                    "name": "Пуховик мужской Columbia Centennial Creek II Down Hooded",
+                    "price": "20 999 ₽",
+                    "btn": "В корзину"
+                },
+                {
+                    "link": "#",
+                    "image": "card7.png",
+                    "name": "Клюшка хоккейная Nordway NDW 1.0 SR",
+                    "price": "999 ₽",
+                    "btn": "В корзину"
+                },
+                {
+                    "link": "#",
+                    "image": "card3.png",
+                    "name": "Беговая дорожка KETTLER Air R1",
+                    "price": "57 999 ₽",
+                    "btn": "В корзину"
+                }
+            ])
+        </div>
+    </div>
+</section>

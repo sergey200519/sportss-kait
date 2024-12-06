@@ -36,7 +36,7 @@ export const scss = () => {
 			),
 		)
 		.pipe(autoprefixer({
-            grid: true,
+            grid: false,
             overrideBrowserslist: ["last 3 versions"],
             cascade: true,
         }))
