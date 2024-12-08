@@ -1,0 +1,38 @@
+.orders {
+    @extend .section;
+    h2 {
+      @extend .section_title;
+    }
+  
+    .orders_table {
+      width: 100%;
+      max-width: 400px;
+      border-collapse: collapse;
+      text-align: left;
+  
+      thead {
+        background-color: var(--orange);
+  
+        th {
+          color: var(--white);
+          padding: 8px;
+          @include font($fz: 12px, $fw: 700);
+        }
+      }
+  
+      tbody {
+        tr {
+        //   &:nth-child(even) {
+        //     background-color: #f9f9f9;
+        //   }
+  
+          td {
+            padding: 8px;
+            @include font($fz: 12px, $fw: 400);
+            border-top: 1px solid #ddd;
+          }
+        }
+      }
+    }
+  }
+  

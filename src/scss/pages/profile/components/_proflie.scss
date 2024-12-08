@@ -1,0 +1,31 @@
+.profile {
+    @extend .section;
+    h2 {
+        @extend .section_title;
+    }
+    &_wrap {
+        display: flex;
+        gap: 50px;
+        &_left {
+            width: 300px;
+        }
+        &_right {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            &_info {
+                display: flex;
+                flex-direction: column;
+                gap: 5px;
+                h3,
+                a {
+                    @include font($fz: 32px, $fw: 700);
+                }
+            }
+            .btn {
+                @extend .button;
+                width: fit-content;
+            }
+        }
+    }
+}
