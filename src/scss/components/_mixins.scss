@@ -9,7 +9,28 @@ $border_radius: var(--border-radius)) {
     border-radius: $border_radius;
 }
 
-@mixin font($fz, $fw: 600, $ff: var(--main_font-family), $fs: normal, $lh: normal, $pos: left) {
+@mixin font($fz: null, $fw: null, $ff: null, $fs: null, $lh: null, $pos: null) {
+    @if $ff {
+        font-family: $ff;
+    }
+    @if $fz {
+        font-size: $fz;
+    }
+    @if $fw {
+        font-weight: $fw;
+    }
+    @if $fs {
+        font-style: $fs;
+    }
+    @if $lh {
+        line-height: $lh;
+    }
+    @if $pos {
+        text-align: $pos;
+    }
+}
+
+@mixin font_all($fz, $fw: 600, $ff: var(--main_font-family), $fs: normal, $lh: normal, $pos: left) {
     font-family: $ff;
     font-size: $fz;
     font-weight: $fw;

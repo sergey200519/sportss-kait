@@ -1,6 +1,6 @@
 * {
   transition: 0.8s;
-  @include font(var(--normal-fz));
+  @include font_all(var(--normal-fz));
 }
 
 
